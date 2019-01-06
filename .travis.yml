@@ -2,12 +2,22 @@ language: node_js
 node_js:
   - "8"
   - "10"
-  - "lts/*"
-  - "node"
+  - lts/*
+  - node
 script:
   - npm test
 jobs:
   include:
     - stage: coverage
-      node_js: "lts/*"
+      node_js: lts/*
       script: jest --coverage --coverageReporters=text-lcov | coveralls
+    - stage: deploy
+      node_js: lts/*
+      script: skip
+      deploy:
+        provider: npm
+        email: litichevskiydv@gmail.com
+        api_key:
+          secure: CZmSv552t0Op5YJk9tVdWV7UWDJNuIbX1cZwnY8arFKh8l90vn696nShKi0ru4thPd3EgPPFcGNyXOwBtnadym0k+LfychHn0cyQSviKciQc0hcMUrHP3Oi34CUodlpZEq9a0ZWjP4J21o7TEIR/OXYFN4xHBCG0BK2anaUqlY92Tybg55lSqpqalhJwsE9rm1ccv2JGoYL2nGjY+lcZhn2iNFVrFhfamgZ8eP/fPLuyfEeMe9l5t3XMbMpgyqLOrLap0yZ3B1K7EUxrQnbCfkhUKvvQOOk98wAwFL06nvAEGHdLb4D1z2YtELHspZlqI4XcBl52S9UKOjRYQWyzn1k+hf6grhlCon0/FwPCHP1YDEohJVtLWg5tU4rwmAj2uDUZ4JmccjbqtgvKsClBc20rx5FlP1pYxmaO17d0YrRd2WIpATdLcYuPYQ0vq+z0G0vy3Q0+Hvi35I+qlLQ/+fQsOW6Ey61bWS0xtLtfZfQlbFjJHRCfDvDCoX1v04Rw2Vn6nt8/sXlzHqhc7/5iOXq7I9aD/31Q4Mu/MhMgLM+4gzmdvlZK1a5+cLoTjNIZFi5vAsdo7ygPpDdaj1oAy3j4NdlT1HdQvgt6vWep1okx6+hQV7+xJRfGeoSS/TusQyf1XaqHNJa6KOknQDF0W1ClTmFxpHH98oNqx5bmvyM=
+        on:
+          branch: master
