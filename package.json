@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Implementation of Set with a configurable equality algorithm",
   "main": "./src/index.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "jest --verbose"
   },
