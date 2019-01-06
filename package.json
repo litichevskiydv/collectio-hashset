@@ -16,8 +16,10 @@
     "url": "git+https://github.com/litichevskiydv/collectio-hashset.git"
   },
   "keywords": [
+    "Collections",
     "Set",
-    "Hashing"
+    "Hashing",
+    "HashSet"
   ],
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
