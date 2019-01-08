@@ -139,7 +139,7 @@ test("Should get entries", () => {
   let values = Array.from(hashSet.entries());
 
   // Then
-  expect(values).toIncludeSameMembers([firstValue, secondValue]);
+  expect(values).toIncludeSameMembers([[firstValue, firstValue], [secondValue, secondValue]]);
 });
 
 test("Should iterate collection", () => {
