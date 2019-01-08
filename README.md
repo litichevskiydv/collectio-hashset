@@ -12,7 +12,7 @@ Implementation of Set with a configurable equality algorithm
   - [`new HashSet(equalityComparer)`](https://github.com/litichevskiydv/collectio-hashset/wiki/constructor)
   - _instance_
     - [.`size`](https://github.com/litichevskiydv/collectio-hashset/wiki/size) : <code>number</code>
-    - [.`add(value)`](https://github.com/litichevskiydv/collectio-hashset/wiki/add) : [<code>HashSet</code>](HashSet)
+    - [.`add(value)`](https://github.com/litichevskiydv/collectio-hashset/wiki/add) : [<code>HashSet</code>](https://github.com/litichevskiydv/collectio-hashset/wiki/HashSet)
     - [.`has(value)`](https://github.com/litichevskiydv/collectio-hashset/wiki/has) : <code>boolean</code>
     - [.`delete(value)`](https://github.com/litichevskiydv/collectio-hashset/wiki/delete) : <code>boolean</code>
     - [.`clear()`](https://github.com/litichevskiydv/collectio-hashset/wiki/clear) : <code>undefined</code>
