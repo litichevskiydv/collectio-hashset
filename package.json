@@ -28,12 +28,18 @@
   },
   "homepage": "https://github.com/litichevskiydv/collectio-hashset#readme",
   "devDependencies": {
-    "coveralls": "3.0.2",
-    "jest": "23.6.0",
-    "jest-extended": "0.11.0"
+    "@types/jest": "^24.9.0",
+    "coveralls": "^3.0.9",
+    "jest": "^24.9.0",
+    "jest-extended": "^0.11.2"
   },
   "jest": {
     "testEnvironment": "node",
-    "setupTestFrameworkScriptFile": "jest-extended"
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
