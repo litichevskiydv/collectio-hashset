@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Implementation of Set with a configurable equality algorithm",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=8"
   },
   "main": "./src/index.js",
   "files": [
