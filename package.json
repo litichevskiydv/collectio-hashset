@@ -12,7 +12,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "coverageCalculation": "jest --coverage"
   },
   "repository": {
     "type": "git",
