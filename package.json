@@ -1,6 +1,6 @@
 {
   "name": "collectio-hashset",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Implementation of Set with a configurable equality algorithm",
   "engines": {
     "node": ">=8"
